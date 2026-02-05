@@ -10,8 +10,25 @@
     <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
+    <!-- Sticky Navigation -->
+    <nav class="nav" id="nav">
+        <div class="container">
+            <div class="nav-logo">Next-Gen CAPTCHAs</div>
+            <div class="nav-links">
+                <a href="#results">Results</a>
+                <a href="#gallery">Gallery</a>
+                <a href="#demo">Demo</a>
+                <a href="#Next-Gen-CAPTCHAs-Leaderboard">Leaderboard</a>
+            </div>
+        </div>
+    </nav>
+
     <!-- Hero Section -->
     <header class="hero">
+        <!-- Floating Orbs -->
+        <div class="hero-orb hero-orb-1"></div>
+        <div class="hero-orb hero-orb-2"></div>
+        <div class="hero-orb hero-orb-3"></div>
         <div class="container">
             <h1 class="title">Next-Gen CAPTCHAs</h1>
             <p class="subtitle">Leveraging the Cognitive Gap for Scalable and Diverse GUI-Agent Defense</p>
@@ -84,7 +101,7 @@
     <!-- Abstract Section -->
     <section class="abstract">
         <div class="container">
-            <h2>Abstract</h2>
+            <h2>Introduce Next-Gen CAPTCHAs</h2>
             <p>
                 The rapid evolution of GUI-enabled agents has rendered traditional CAPTCHAs obsolete.
                 While previous benchmarks established a baseline for evaluating multimodal agents,
@@ -93,7 +110,7 @@
             </p>
             <p>
                 We introduce <strong>Next-Gen CAPTCHAs</strong>, a scalable defense framework with
-                <strong>27 novel CAPTCHA families</strong> designed to secure the next-generation web against advanced agents.
+                <strong>27 newly-designed GUI-Agent Era's CAPTCHA families</strong> designed to secure the next-generation web against advanced agents.
                 We exploit the persistent human-agent <em>"Cognitive Gap"</em> in interactive perception, memory,
                 decision-making, and action. By engineering dynamic tasks that require adaptive intuition
                 rather than granular planning, we re-establish a robust distinction between biological users
@@ -111,34 +128,69 @@
             <div class="results-chart">
                 <div class="chart-container">
                     <div class="bar-chart">
-                        <div class="bar human-bar" style="--height: 98.8%">
+                        <div class="bar bar-human" style="--height: 98.8%">
+                            <img src="assets/logos/human.png" alt="Human" class="bar-logo">
                             <span class="bar-value">98.8%</span>
                             <span class="bar-label">Human</span>
                         </div>
-                        <div class="bar ai-bar" style="--height: 5.9%">
+                        <div class="bar bar-openai" style="--height: 5.9%">
+                            <img src="assets/logos/openai.png" alt="OpenAI" class="bar-logo">
                             <span class="bar-value">5.9%</span>
                             <span class="bar-label">GPT-5.2-xHigh</span>
                         </div>
-                        <div class="bar ai-bar" style="--height: 3.2%">
+                        <div class="bar bar-gemini" style="--height: 3.2%">
+                            <img src="assets/logos/gemini.png" alt="Gemini" class="bar-logo">
                             <span class="bar-value">3.2%</span>
                             <span class="bar-label">Gemini-3-Flash</span>
                         </div>
-                        <div class="bar ai-bar" style="--height: 3.0%">
+                        <div class="bar bar-claude" style="--height: 3.0%">
+                            <img src="assets/logos/claude.png" alt="Claude" class="bar-logo">
                             <span class="bar-value">3.0%</span>
                             <span class="bar-label">Claude-Opus4.5</span>
                         </div>
-                        <div class="bar ai-bar" style="--height: 1.3%">
+                        <div class="bar bar-gemini" style="--height: 1.3%">
+                            <img src="assets/logos/gemini.png" alt="Gemini" class="bar-logo">
                             <span class="bar-value">1.3%</span>
                             <span class="bar-label">Gemini-3-Pro</span>
                         </div>
-                        <div class="bar ai-bar" style="--height: 1.3%">
+                        <div class="bar bar-doubao" style="--height: 1.3%">
+                            <img src="assets/logos/doubao.png" alt="Doubao" class="bar-logo">
                             <span class="bar-value">1.3%</span>
                             <span class="bar-label">Doubao-Seed-1.8</span>
                         </div>
-                        <div class="bar ai-bar" style="--height: 0.9%">
+                        <div class="bar bar-qwen" style="--height: 0.9%">
+                            <img src="assets/logos/qwen.png" alt="Qwen" class="bar-logo">
                             <span class="bar-value">0.9%</span>
                             <span class="bar-label">Qwen3-VL-Plus</span>
                         </div>
+                    </div>
+                </div>
+
+                <!-- Legend -->
+                <div class="chart-legend">
+                    <div class="legend-item">
+                        <span class="legend-color legend-human"></span>
+                        <span class="legend-label">Human</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-openai"></span>
+                        <span class="legend-label">OpenAI (xHigh Thinking Mode, Max level)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-gemini"></span>
+                        <span class="legend-label">Google (High Thinking Mode)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-claude"></span>
+                        <span class="legend-label">Anthropic (Extended High Thinking Mode)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-doubao"></span>
+                        <span class="legend-label">ByteDance Doubao (High Thinking Mode)</span>
+                    </div>
+                    <div class="legend-item">
+                        <span class="legend-color legend-qwen"></span>
+                        <span class="legend-label">Alibaba (High Thinking Mode)</span>
                     </div>
                 </div>
             </div>
@@ -252,30 +304,43 @@
         </div>
     </section>
 
-    <!-- Detailed Results Table -->
-    <section class="detailed-results" id="detailed-results">
+    <!-- Leaderboard Section -->
+    <section class="leaderboard" id="Next-Gen-CAPTCHAs-Leaderboard">
         <div class="container">
-            <h2>Detailed Results</h2>
-            <p class="section-desc">Pass@1 accuracy (%) by CAPTCHA type and model</p>
+            <div class="leaderboard-header">
+                <h2>Leaderboard</h2>
+                <p class="section-desc">Pass@1 accuracy on 519 Next-Gen CAPTCHA puzzles</p>
+            </div>
 
-            <div class="table-wrapper">
-                <table class="results-table" id="results-table">
-                    <thead>
-                        <tr>
-                            <th>CAPTCHA Type</th>
-                            <th>Human</th>
-                            <th>GPT-5.2-xHigh</th>
-                            <th>Gemini-3-Flash</th>
-                            <th>Claude-Opus4.5</th>
-                            <th>Gemini-3-Pro</th>
-                            <th>Doubao-Seed-1.8</th>
-                            <th>Qwen3-VL-Plus</th>
-                        </tr>
-                    </thead>
-                    <tbody id="results-tbody">
-                        <!-- Populated by JavaScript -->
-                    </tbody>
-                </table>
+            <!-- Organization Filters -->
+            <div class="leaderboard-filters">
+                <div class="filter-group">
+                    <button class="org-filter active" data-org="all">All</button>
+                    <button class="org-filter" data-org="openai">OpenAI</button>
+                    <button class="org-filter" data-org="anthropic">Anthropic</button>
+                    <button class="org-filter" data-org="google">Google</button>
+                    <button class="org-filter" data-org="alibaba">Alibaba</button>
+                    <button class="org-filter" data-org="bytedance">ByteDance</button>
+                </div>
+                <div class="filter-group">
+                    <button class="mode-filter active" data-mode="all">All</button>
+                    <button class="mode-filter" data-mode="reasoning">High Reasoning</button>
+                    <button class="mode-filter" data-mode="standard">Low/No Reasoning</button>
+                </div>
+            </div>
+
+            <!-- Leaderboard Table Header -->
+            <div class="leaderboard-table-header">
+                <div class="col-rank">RANK</div>
+                <div class="col-model">MODEL</div>
+                <div class="col-org">ORGANIZATION</div>
+                <div class="col-score">SOLVING RATE</div>
+                <div class="col-expand"></div>
+            </div>
+
+            <!-- Leaderboard Items -->
+            <div class="leaderboard-list" id="leaderboard-list">
+                <!-- Populated by JavaScript -->
             </div>
         </div>
     </section>
