@@ -277,13 +277,10 @@ const leaderboardData = [
     { rank: 0, model: "Human", org: "human", orgDisplay: "Human Baseline", score: 98.8, std: 0.2, reasoning: false, logo: "assets/logos/human.png" },
     { rank: 1, model: "GPT-5.2 (xHigh)", org: "openai", orgDisplay: "OpenAI", score: 5.9, std: 0.5, reasoning: true, logo: "assets/logos/openai.png" },
     { rank: 2, model: "Gemini-3-Flash (High)", org: "google", orgDisplay: "Google", score: 3.2, std: 0.3, reasoning: true, logo: "assets/logos/gemini.png" },
-    { rank: 3, model: "Claude Opus 4.5 (Extended)", org: "anthropic", orgDisplay: "Anthropic", score: 3.0, std: 1.4, reasoning: true, logo: "assets/logos/claude.png" },
+    { rank: 3, model: "Claude Opus 4.5 (Extended High)", org: "anthropic", orgDisplay: "Anthropic", score: 3.0, std: 1.4, reasoning: true, logo: "assets/logos/claude.png" },
     { rank: 4, model: "Gemini-3-Pro (High)", org: "google", orgDisplay: "Google", score: 1.3, std: 0.2, reasoning: true, logo: "assets/logos/gemini.png" },
     { rank: 5, model: "Doubao-Seed-1.8 (High)", org: "bytedance", orgDisplay: "ByteDance", score: 1.3, std: 0.6, reasoning: true, logo: "assets/logos/doubao.png" },
-    { rank: 6, model: "Qwen3-VL-Plus (High)", org: "alibaba", orgDisplay: "Alibaba", score: 0.9, std: 0.3, reasoning: true, logo: "assets/logos/qwen.png" },
-    { rank: 7, model: "GPT-5.2", org: "openai", orgDisplay: "OpenAI", score: 0.8, std: 0.2, reasoning: false, logo: "assets/logos/openai.png" },
-    { rank: 8, model: "Claude Opus 4.5", org: "anthropic", orgDisplay: "Anthropic", score: 0.6, std: 0.3, reasoning: false, logo: "assets/logos/claude.png" },
-    { rank: 9, model: "Gemini-3-Flash", org: "google", orgDisplay: "Google", score: 0.4, std: 0.1, reasoning: false, logo: "assets/logos/gemini.png" }
+    { rank: 6, model: "Qwen3-VL-Plus (High)", org: "alibaba", orgDisplay: "Alibaba", score: 0.9, std: 0.3, reasoning: true, logo: "assets/logos/qwen.png" }
 ];
 
 // ========================================
@@ -476,7 +473,7 @@ function renderLeaderboard(orgFilter = 'all', modeFilter = 'all') {
                 </div>
                 <div class="row-org">${item.orgDisplay}</div>
                 <div class="row-score">
-                    <span class="score-value">${item.score.toFixed(1)}%<span class="std"> ±${item.std.toFixed(1)}%</span></span>
+                    <span class="score-value">${item.score.toFixed(1)}%</span>
                     <div class="score-bar-container">
                         <div class="score-bar ${barClass}" style="width: 0%" data-width="${item.score}%"></div>
                     </div>
