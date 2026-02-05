@@ -16,9 +16,9 @@
             <div class="nav-logo">Next-Gen CAPTCHAs</div>
             <div class="nav-links">
                 <a href="#results">Results</a>
-                <a href="#gallery">Gallery</a>
-                <a href="#demo">Demo</a>
                 <a href="#Next-Gen-CAPTCHAs-Leaderboard">Leaderboard</a>
+                <a href="#demo">Demo</a>
+                <a href="#gallery">Gallery</a>
             </div>
         </div>
     </nav>
@@ -214,6 +214,65 @@
         </div>
     </section>
 
+    <!-- Leaderboard Section -->
+    <section class="leaderboard" id="Next-Gen-CAPTCHAs-Leaderboard">
+        <div class="container">
+            <div class="leaderboard-header">
+                <h2>Leaderboard</h2>
+                <p class="section-desc">Pass@1 accuracy on 519 Next-Gen CAPTCHA puzzles</p>
+            </div>
+
+            <!-- Organization Filters -->
+            <div class="leaderboard-filters">
+                <div class="filter-group">
+                    <button class="org-filter active" data-org="all">All</button>
+                    <button class="org-filter" data-org="openai">OpenAI</button>
+                    <button class="org-filter" data-org="anthropic">Anthropic</button>
+                    <button class="org-filter" data-org="google">Google</button>
+                    <button class="org-filter" data-org="alibaba">Alibaba</button>
+                    <button class="org-filter" data-org="bytedance">ByteDance</button>
+                </div>
+                <div class="filter-group">
+                    <button class="mode-filter active" data-mode="all">All</button>
+                    <button class="mode-filter" data-mode="reasoning">High Reasoning</button>
+                    <button class="mode-filter" data-mode="standard">Low/No Reasoning</button>
+                </div>
+            </div>
+
+            <!-- Leaderboard Table Header -->
+            <div class="leaderboard-table-header">
+                <div class="col-rank">RANK</div>
+                <div class="col-model">MODEL</div>
+                <div class="col-org">ORGANIZATION</div>
+                <div class="col-score">SOLVING RATE</div>
+                <div class="col-expand"></div>
+            </div>
+
+            <!-- Leaderboard Items -->
+            <div class="leaderboard-list" id="leaderboard-list">
+                <!-- Populated by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Demo Section -->
+    <section class="demo" id="demo">
+        <div class="container">
+            <h2>Try the Demo</h2>
+            <p class="section-desc">Experience Next-Gen CAPTCHAs yourself</p>
+
+            <div class="demo-cta">
+                <a href="https://huggingface.co/spaces/zcahjl3/NextGen-CAPTCHAs" class="btn btn-large btn-primary" target="_blank">
+                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
+                    </svg>
+                    Launch Interactive Demo
+                </a>
+                <p class="demo-note">Opens in Hugging Face Spaces</p>
+            </div>
+        </div>
+    </section>
+
     <!-- Cognitive Gap Categories -->
     <section class="categories">
         <div class="container">
@@ -282,65 +341,6 @@
 
             <div class="captcha-grid" id="captcha-grid">
                 <!-- Captchas will be populated by JavaScript -->
-            </div>
-        </div>
-    </section>
-
-    <!-- Demo Section -->
-    <section class="demo" id="demo">
-        <div class="container">
-            <h2>Try the Demo</h2>
-            <p class="section-desc">Experience Next-Gen CAPTCHAs yourself</p>
-
-            <div class="demo-cta">
-                <a href="https://huggingface.co/spaces/zcahjl3/NextGen-CAPTCHAs" class="btn btn-large btn-primary" target="_blank">
-                    <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                        <polygon points="5 3 19 12 5 21 5 3"></polygon>
-                    </svg>
-                    Launch Interactive Demo
-                </a>
-                <p class="demo-note">Opens in Hugging Face Spaces</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Leaderboard Section -->
-    <section class="leaderboard" id="Next-Gen-CAPTCHAs-Leaderboard">
-        <div class="container">
-            <div class="leaderboard-header">
-                <h2>Leaderboard</h2>
-                <p class="section-desc">Pass@1 accuracy on 519 Next-Gen CAPTCHA puzzles</p>
-            </div>
-
-            <!-- Organization Filters -->
-            <div class="leaderboard-filters">
-                <div class="filter-group">
-                    <button class="org-filter active" data-org="all">All</button>
-                    <button class="org-filter" data-org="openai">OpenAI</button>
-                    <button class="org-filter" data-org="anthropic">Anthropic</button>
-                    <button class="org-filter" data-org="google">Google</button>
-                    <button class="org-filter" data-org="alibaba">Alibaba</button>
-                    <button class="org-filter" data-org="bytedance">ByteDance</button>
-                </div>
-                <div class="filter-group">
-                    <button class="mode-filter active" data-mode="all">All</button>
-                    <button class="mode-filter" data-mode="reasoning">High Reasoning</button>
-                    <button class="mode-filter" data-mode="standard">Low/No Reasoning</button>
-                </div>
-            </div>
-
-            <!-- Leaderboard Table Header -->
-            <div class="leaderboard-table-header">
-                <div class="col-rank">RANK</div>
-                <div class="col-model">MODEL</div>
-                <div class="col-org">ORGANIZATION</div>
-                <div class="col-score">SOLVING RATE</div>
-                <div class="col-expand"></div>
-            </div>
-
-            <!-- Leaderboard Items -->
-            <div class="leaderboard-list" id="leaderboard-list">
-                <!-- Populated by JavaScript -->
             </div>
         </div>
     </section>
