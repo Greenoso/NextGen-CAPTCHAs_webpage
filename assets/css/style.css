@@ -127,18 +127,38 @@ a:hover {
 }
 
 .authors {
-    margin-bottom: var(--spacing-xl);
+    margin-bottom: var(--spacing-sm);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-xs) var(--spacing-md);
 }
 
 .author {
     font-weight: 500;
-    display: block;
-    margin-bottom: var(--spacing-xs);
+    font-size: 1.05rem;
+}
+
+.author sup {
+    font-size: 0.7em;
+}
+
+.affiliations {
+    margin-bottom: var(--spacing-xl);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-xs) var(--spacing-lg);
 }
 
 .affiliation {
-    font-size: 0.875rem;
+    font-size: 0.85rem;
     opacity: 0.8;
+}
+
+.affiliation.note {
+    font-style: italic;
+    opacity: 0.7;
 }
 
 /* Hero Stats */

@@ -417,13 +417,12 @@ function setupFilterButtons() {
 // Copy BibTeX
 // ========================================
 function copyBibtex() {
-    const bibtex = `@inproceedings{anonymous2025nextgen,
+    const bibtex = `@article{liu2026nextgen,
   title={Next-Gen CAPTCHAs: Leveraging the Cognitive Gap for
          Scalable and Diverse GUI-Agent Defense},
-  author={Anonymous},
-  booktitle={International Conference on Machine Learning (ICML)},
-  year={2025},
-  note={Under Review}
+  author={Liu, Jiacheng and Luo, Yaxin and Cui, Jiacheng and
+          Shang, Xinyi and Zhao, Xiaohan and Shen, Zhiqiang},
+  year={2026}
 }`;
 
     navigator.clipboard.writeText(bibtex).then(() => {
