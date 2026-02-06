@@ -9,7 +9,7 @@ const captchaData = [
         id: "3D_Viewpoint",
         name: "3D Viewpoint",
         description: "Select all views showing the same colored-edge wireframe from different angles",
-        gaps: ["G1"],
+        gaps: ["G1", "G4", "G5"],
         answerType: "Select",
         generative: true
     },
@@ -17,7 +17,7 @@ const captchaData = [
         id: "Backmost_Layer",
         name: "Backmost Layer",
         description: "Click cells where the backmost (occluded) shape matches the reference",
-        gaps: ["G1", "G3"],
+        gaps: ["G1"],
         answerType: "Select",
         generative: true
     },
@@ -41,7 +41,7 @@ const captchaData = [
         id: "Dice_Roll_Path",
         name: "Dice Roll Path",
         description: "Roll a die along a shown path and report the final top face",
-        gaps: ["G4", "G3"],
+        gaps: ["G3", "G4", "G5"],
         answerType: "Numeric",
         generative: true
     },
@@ -49,7 +49,7 @@ const captchaData = [
         id: "Dynamic_Jigsaw",
         name: "Dynamic Jigsaw",
         description: "Drag and drop animated GIF pieces to complete a 3×3 jigsaw puzzle",
-        gaps: ["G2", "G3", "G5"],
+        gaps: ["G2", "G4", "G5"],
         answerType: "Drag-and-drop",
         generative: true
     },
@@ -113,7 +113,7 @@ const captchaData = [
         id: "Rotation_Match",
         name: "Rotation Match",
         description: "Select tiles of the most frequent shape, ignoring rotation/color/texture",
-        gaps: ["G1"],
+        gaps: ["G1", "G4"],
         answerType: "Select",
         generative: true
     },
