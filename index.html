@@ -123,7 +123,7 @@
     <section class="results" id="results">
         <div class="container">
             <h2>Key Results</h2>
-            <p class="section-desc">Performance comparison across frontier AI models on our benchmark (519 puzzles)</p>
+            <p class="section-desc"> Performance comparison across frontier AI models on our benchmark<sup>†</sup> </p>
 
             <div class="results-chart">
                 <div class="chart-container">
@@ -194,13 +194,18 @@
                     </div>
                 </div>
             </div>
+            
+            <p class="results-footnote">
+            <sup>†</sup> The benchmark contains 519 puzzles in total; due to inference cost constraints, GPT-5.2-xHigh and Claude-Opus-4.5 were evaluated on a 135-puzzle subset.
+            </p>
+
 
             <div class="cost-insight">
                 <div class="insight-card">
                     <div class="insight-icon">&#128176;</div>
                     <div class="insight-content">
                         <div class="insight-title">Economic Asymmetry</div>
-                        <div class="insight-desc">GPT-5.2-xHigh spent <strong>$6.02 per puzzle</strong> to achieve only 5.9% success rate, while humans solve in 31 seconds per puzzle for free.</div>
+                        <div class="insight-desc">The Browse-Use Agent backed by GPT-5.2-xHigh spent <strong>$6.02</strong> per puzzle to achieve only 5.9% success rate, while humans solve in 31 seconds per puzzle for free.</div>
                     </div>
                 </div>
                 <div class="insight-card">
@@ -219,7 +224,7 @@
         <div class="container">
             <div class="leaderboard-header">
                 <h2>Leaderboard</h2>
-                <p class="section-desc">Pass@1 accuracy on 519 Next-Gen CAPTCHA puzzles</p>
+                <p class="section-desc">Pass@1 accuracy on Next-Gen CAPTCHA puzzles<sup>†</sup></p>
             </div>
 
             <!-- Organization Filters -->
