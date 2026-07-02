@@ -579,11 +579,10 @@ function setupFilterButtons() {
 // Copy BibTeX
 // ========================================
 function copyBibtex() {
-    const bibtex = `@article{liu2026nextgen,
-  title={Next-Gen CAPTCHAs: Leveraging the Cognitive Gap for
-         Scalable and Diverse GUI-Agent Defense},
-  author={Liu, Jiacheng and Luo, Yaxin and Cui, Jiacheng and
-          Shang, Xinyi and Zhao, Xiaohan and Shen, Zhiqiang},
+    const bibtex = `@article{liu2026next,
+  title={Next-Gen CAPTCHAs: Leveraging the Cognitive Gap for Scalable and Diverse GUI-Agent Defense},
+  author={Liu, Jiacheng and Luo, Yaxin and Cui, Jiacheng and Shang, Xinyi and Zhao, Xiaohan and Shen, Zhiqiang},
+  journal={arXiv preprint arXiv:2602.09012},
   year={2026}
 }`;
 
